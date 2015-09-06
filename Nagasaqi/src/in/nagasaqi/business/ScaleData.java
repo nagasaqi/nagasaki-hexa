@@ -1,12 +1,10 @@
-package com.praval.business;
+package in.nagasaqi.business;
 
 public class ScaleData {
 
-	int[] frequencies;
+	public int[] frequencies;
 	String name;
 
-	
-	
 	public ScaleData(int[] frequencies, String name) {
 		super();
 		this.frequencies = frequencies;
@@ -28,7 +26,7 @@ public class ScaleData {
 	public void setName(String name) {
 		this.name = name;
 	}
-	
+
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
