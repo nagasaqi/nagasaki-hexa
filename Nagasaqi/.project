@@ -20,4 +20,11 @@
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.mylyn.wikitext.ui.wikiTextNature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>build/build.xml</name>
+			<type>1</type>
+			<location>/home/praval/workspace/CodeWorkspace/Nagasaqi/build/build.xml</location>
+		</link>
+	</linkedResources>
 </projectDescription>
