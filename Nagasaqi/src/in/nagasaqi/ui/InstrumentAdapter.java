@@ -280,6 +280,7 @@ public class InstrumentAdapter extends JPanel implements MouseInputListener,
 		System.out.println("I moved:" + e.getPreciseWheelRotation());
 		System.out.println("I moved:" + e.getWheelRotation());
 		System.out.println("@:" + e.getWhen());
+		@SuppressWarnings("unused")
 		Date d = new Date(e.getWhen());
 		System.out.println();
 		if (this.isAnyButtonDown()) {
@@ -481,6 +482,7 @@ public class InstrumentAdapter extends JPanel implements MouseInputListener,
 	}
 
 	public void drawVisual(final boolean reset, final int x, final int y) {
+		@SuppressWarnings("static-access")
 		final Graphics graphics = this.jp.getGraphics();
 		if (!reset)
 			graphics.drawOval(x, y, 50, 50);

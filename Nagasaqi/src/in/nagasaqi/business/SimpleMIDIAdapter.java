@@ -21,6 +21,7 @@ public class SimpleMIDIAdapter {
 	static int BEND_UNIT = 4096; // equal to one semitone
 	int flute = 79;// test instrument for program change a.k.a instrument
 
+	@SuppressWarnings("static-access")
 	private SimpleMIDIAdapter(int channel, int volume, int duration) {
 		super();
 		// TODO Auto-generated constructor stub
