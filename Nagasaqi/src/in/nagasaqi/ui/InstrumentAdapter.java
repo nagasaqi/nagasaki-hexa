@@ -5,12 +5,17 @@ import in.nagasaqi.business.ScaleBase;
 import in.nagasaqi.business.SimpleMIDIAdapter;
 
 import java.awt.BorderLayout;
+import java.awt.Color;
 import java.awt.Dimension;
+import java.awt.Font;
 import java.awt.Graphics;
+import java.awt.Image;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseWheelEvent;
 import java.awt.event.MouseWheelListener;
 import java.awt.image.BufferedImage;
+import java.awt.image.ImageObserver;
+import java.awt.image.ImageProducer;
 import java.io.IOException;
 import java.sql.Date;
 import java.util.ArrayList;
@@ -133,6 +138,7 @@ public class InstrumentAdapter extends JPanel implements MouseInputListener,
 		// Display the window.
 		frame.pack();
 		frame.setVisible(true);
+		frame.setResizable(false);
 	}
 
 	@Override
@@ -484,9 +490,20 @@ public class InstrumentAdapter extends JPanel implements MouseInputListener,
 	public void drawVisual(final boolean reset, final int x, final int y) {
 		@SuppressWarnings("static-access")
 		final Graphics graphics = this.jp.getGraphics();
-		if (!reset)
-			graphics.drawOval(x, y, 50, 50);
+		if (!reset){
+			graphics.setColor(Color.WHITE);
+			graphics.drawOval(x-10, y-10, 20,5 );
+			graphics.fillOval(x-10, y-10, 20,5 );
+			
+			graphics.setColor(Color.LIGHT_GRAY);
+			graphics.drawOval(x-20, y-30, 40,15 );
+			graphics.fillOval(x-20, y-30, 40,15 );
+			
+			graphics.setColor(Color.DARK_GRAY);
+			graphics.drawOval(x-40, y-60, 80,25 );
+			graphics.fillOval(x-40, y-60, 80,25 );
+			graphics.drawString("@", x-10, y);}
 		else
-			graphics.clearRect(0, 0, 400, 400);
+			this.paintAll(this.getGraphics());
 	}
 }

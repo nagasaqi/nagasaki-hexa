@@ -71,8 +71,9 @@ public class DisplayAdapter extends JFrame {
 		// TODO Auto-generated constructor stub
 
 		setTitle("Display Adapter.");
+		setResizable(false);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(420, 0, 480, 440);
+		setBounds(470, 0, 400, 400);
 		JPanel contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		contentPane.setBackground(Color.BLACK);
@@ -183,7 +184,7 @@ public class DisplayAdapter extends JFrame {
 		btnListKeys = new ArrayList<ArrayList<JButton>>();
 		for (int i = 0; i < 7; i++) {
 			JButton jb = new JButton();
-			jb.setBounds(40 + i * 40 + 40, 120, 50, 40);
+			jb.setBounds(40 + i * 40 + 40, 120, 55, 40);
 			jb.setBackground(Color.WHITE);
 			jb.setForeground(Color.BLACK);
 			jb.setText(ScaleBase

@@ -18,6 +18,22 @@ public class ScaleBase {
 		int[] asav = { 60, 62, 63, 65, 67, 68, 70 };// Asavari
 		int[] bhairavi = { 60, 61, 63, 65, 67, 68, 70 };// Bhairavi
 		int[] todi = { 60, 61, 63, 66, 67, 68, 71 };// Todi
+		
+//		int[] aeo = { 60, 62, 63, 65, 67, 69, 70 };
+//		int[] arab = { 60, 62, 64, 65, 67, 69, 71 };
+//		int[] blues = { 60, 62, 64, 65, 67, 69, 71 };
+//		int[] dim= { 60, 62, 64, 65, 67, 69, 71 };
+//		int[] dom= { 60, 62, 64, 65, 67, 69, 71 };
+//		int[] enigma= { 60, 62, 64, 65, 67, 69, 71 };
+//		int[] hungmin= { 60, 62, 64, 65, 67, 69, 71 };
+//		int[] jap= { 60, 62, 64, 65, 67, 69, 71 };
+//		int[] locrian= { 60, 62, 64, 65, 67, 69, 71 };
+//		int[] lydian= { 60, 62, 64, 65, 67, 69, 71 };
+//		int[] neop= { 60, 62, 64, 65, 67, 69, 71 };
+//		int[] phryg= { 60, 62, 64, 65, 67, 69, 71 };
+//		int[] mix= { 60, 62, 64, 65, 67, 69, 71 };
+		
+		
 		listScales.add(new ScaleData(bilawal, "Bilawal"));
 		listScales.add(new ScaleData(yaman, "Yaman"));
 		listScales.add(new ScaleData(khamaj, "Khamaj"));
