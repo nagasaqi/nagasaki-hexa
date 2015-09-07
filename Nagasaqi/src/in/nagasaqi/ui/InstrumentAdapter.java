@@ -76,7 +76,7 @@ public class InstrumentAdapter extends JPanel implements MouseInputListener,
 		// display.setOpacity(0.5f);
 		BufferedImage logo = null;
 		try {
-			logo = ImageIO.read(this.getClass().getResource("Logo.png"));
+			logo = ImageIO.read(this.getClass().getResource("nagasaqi.png"));
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
