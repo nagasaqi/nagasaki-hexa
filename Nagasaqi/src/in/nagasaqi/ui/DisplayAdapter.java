@@ -76,7 +76,7 @@ public class DisplayAdapter extends JFrame {
 		setBounds(470, 0, 400, 400);
 		JPanel contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
-		contentPane.setBackground(Color.BLACK);
+		contentPane.setBackground(Color.DARK_GRAY);
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 

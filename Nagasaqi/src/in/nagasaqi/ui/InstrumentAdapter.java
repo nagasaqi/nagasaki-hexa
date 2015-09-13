@@ -49,6 +49,7 @@ public class InstrumentAdapter extends JPanel implements MouseInputListener,
 
 	private DisplayAdapter display;
 
+	private KeyBoardControllerSim keySim;
 	private static JPanel jp;
 
 	@SuppressWarnings("deprecation")
@@ -65,7 +66,7 @@ public class InstrumentAdapter extends JPanel implements MouseInputListener,
 		this.addMouseWheelListener(this);
 		this.addMouseListener(this);
 		setPreferredSize(new Dimension(400, 400));
-
+		this.keySim = new KeyBoardControllerSim(this);
 		int channel = 0; // 0 is a piano, 9 is percussion, other channels are
 							// for other instruments
 		int volume = 80; // between 0 et 127
@@ -169,6 +170,27 @@ public class InstrumentAdapter extends JPanel implements MouseInputListener,
 		play();
 	}
 
+	public synchronized void playKey(int note){
+		switch (note) {
+		
+		case 0:
+			simpleMIDIAdapter.allNotesOff();
+			break;
+		case 8:
+			SimpleMIDIAdapter
+			.noteOn(scaleBase.getListScales()
+					.get(display.getScalenum()).frequencies[0]+12,80);
+			break;
+		case 9:
+			simpleMIDIAdapter.noteSlide(1);
+			break;
+		default:
+			SimpleMIDIAdapter
+			.noteOn(scaleBase.getListScales()
+					.get(display.getScalenum()).frequencies[note-1],80);
+		}
+	}
+	
 	private synchronized void play() {
 		System.out.println("Played");
 		long diff = pressHistory.getGapFromHistory();
