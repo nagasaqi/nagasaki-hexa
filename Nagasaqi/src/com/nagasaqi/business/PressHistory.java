@@ -1,4 +1,4 @@
-package in.nagasaqi.business;
+package com.nagasaqi.business;
 
 import java.util.ArrayList;
 import java.util.Date;

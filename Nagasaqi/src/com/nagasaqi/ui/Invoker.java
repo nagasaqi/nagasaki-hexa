@@ -1,7 +1,7 @@
 /**
  * 
  */
-package in.nagasaqi.ui;
+package com.nagasaqi.ui;
 
 /**
  * @author praval

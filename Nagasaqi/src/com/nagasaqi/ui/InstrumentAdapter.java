@@ -1,8 +1,4 @@
-package in.nagasaqi.ui;
-
-import in.nagasaqi.business.PressHistory;
-import in.nagasaqi.business.ScaleBase;
-import in.nagasaqi.business.SimpleMIDIAdapter;
+package com.nagasaqi.ui;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -30,6 +26,10 @@ import javax.swing.JPanel;
 import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 import javax.swing.event.MouseInputListener;
+
+import com.nagasaqi.business.PressHistory;
+import com.nagasaqi.business.ScaleBase;
+import com.nagasaqi.business.SimpleMIDIAdapter;
 
 public class InstrumentAdapter extends JPanel implements MouseInputListener,
 		MouseWheelListener {

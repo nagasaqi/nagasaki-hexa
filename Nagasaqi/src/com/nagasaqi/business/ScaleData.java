@@ -1,4 +1,4 @@
-package in.nagasaqi.business;
+package com.nagasaqi.business;
 
 public class ScaleData {
 

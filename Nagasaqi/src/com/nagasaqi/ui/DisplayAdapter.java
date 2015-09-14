@@ -1,9 +1,4 @@
-package in.nagasaqi.ui;
-
-import in.nagasaqi.business.InstrumentChooser;
-import in.nagasaqi.business.ScaleBase;
-import in.nagasaqi.business.ScaleData;
-import in.nagasaqi.business.SimpleMIDIAdapter;
+package com.nagasaqi.ui;
 
 import java.awt.Color;
 import java.awt.Font;
@@ -21,6 +16,11 @@ import javax.swing.JTextField;
 import javax.swing.border.EmptyBorder;
 import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
+
+import com.nagasaqi.business.InstrumentChooser;
+import com.nagasaqi.business.ScaleBase;
+import com.nagasaqi.business.ScaleData;
+import com.nagasaqi.business.SimpleMIDIAdapter;
 
 public class DisplayAdapter extends JFrame {
 

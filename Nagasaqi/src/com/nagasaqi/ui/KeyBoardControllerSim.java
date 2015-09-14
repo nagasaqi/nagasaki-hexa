@@ -1,9 +1,7 @@
 /**
  * 
  */
-package in.nagasaqi.ui;
-
-import in.nagasaqi.business.SimpleMIDIAdapter;
+package com.nagasaqi.ui;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
@@ -30,6 +28,8 @@ import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.text.html.HTMLDocument.HTMLReader.SpecialAction;
+
+import com.nagasaqi.business.SimpleMIDIAdapter;
 
 /**
  * @author praval

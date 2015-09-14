@@ -1,9 +1,9 @@
-package in.nagasaqi.business;
-
-import in.nagasaqi.ui.DisplayAdapter;
+package com.nagasaqi.business;
 
 import javax.sound.midi.Instrument;
 import javax.swing.JComboBox;
+
+import com.nagasaqi.ui.DisplayAdapter;
 
 public class InstrumentChooser extends JComboBox<String> {
 	/**
